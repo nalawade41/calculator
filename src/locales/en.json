@@ -1,6 +1,9 @@
 {
   "RootLayout": {
     "home_link": "Home",
+    "age_link": "Age Calculator",
+    "simple_sip_link": "SIP Calculator",
+    "lumpsum_link": "Lumpsum Calculator",
     "about_link": "About",
     "counter_link": "Counter",
     "portfolio_link": "Portfolio",
@@ -22,9 +25,56 @@
     "loading_counter": "Loading counter...",
     "error_reporting_powered_by": "Error reporting powered by"
   },
+  "Age": {
+    "meta_title": "Age Calculator",
+    "meta_description": "Calculate your age",
+    "loading_age": "Loading age calculator...",
+    "error_reporting_powered_by": "Error reporting powered by",
+    "fallback_title": "Loading Your Age"
+  },
+  "AgeForm": {
+    "presentation": "Calculates the Age of the user",
+    "label_date_of_birth": "Date Of Birth",
+    "button_get_age": "Age",
+    "label_age": "Your Age"
+  },
+  "SimpleSipForm": {
+    "presentation": "Calculates the sip returns",
+    "label_monthly_investment": "Monthly Investment",
+    "label_expected_return_rate": "Expected Return Rate (p.a)",
+    "label_time_period": "Time Period",
+    "label_result_invested_amount": "Invested Amount",
+    "label_result_estimated_returns": "Est. Returns",
+    "label_result_total_value": "Total Value",
+    "button_calculate": "Calculate Returns"
+  },
+  "SimpleSIP": {
+    "meta_title": "SIP Calculator",
+    "meta_description": "Calculate your sip returns",
+    "loading_simple_sip": "Loading sip calculator...",
+    "error_reporting_powered_by": "Error reporting powered by",
+    "fallback_title": "Loading Your SIP Calculator"
+  },
+  "LumpsumForm": {
+    "presentation": "Calculates the lumpsum returns",
+    "label_total_investment": "Total Investment",
+    "label_expected_return_rate": "Expected Return Rate (p.a)",
+    "label_time_period": "Time Period",
+    "label_result_invested_amount": "Invested Amount",
+    "label_result_estimated_returns": "Est. Returns",
+    "label_result_total_value": "Total Value",
+    "button_calculate": "Calculate Returns"
+  },
+  "LumpSum": {
+    "meta_title": "Lumpsum Calculator",
+    "meta_description": "Calculate your lumpsum returns",
+    "loading_lumpsum": "Loading lumpsum calculator...",
+    "error_reporting_powered_by": "Error reporting powered by",
+    "fallback_title": "Loading Your Lumpsum Calculator"
+  },
   "CounterForm": {
-    "presentation": "The counter is stored in the database and incremented by the value you provide.",
-    "label_increment": "Increment by",
+    "presentation": "Calculates the Age of the user",
+    "label_increment": "Increment By",
     "button_increment": "Increment"
   },
   "CurrentCount": {

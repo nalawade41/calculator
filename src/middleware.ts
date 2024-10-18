@@ -38,11 +38,26 @@ export default function middleware(
         });
       }
 
-      return intlMiddleware(req);
+      return handleNext(req);
     })(request, event);
   }
 
-  return intlMiddleware(request);
+  // Proceed with other middlewares if Clerk is not required
+  return handleNext(request);
+}
+
+function handleNext(request: NextRequest) {
+  // Set the custom header
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set('x-pathname', request.nextUrl.pathname);
+
+  // Create the response and run intl middleware
+  const response = intlMiddleware(request);
+
+  // Modify the response with custom headers
+  response.headers.set('x-pathname', request.nextUrl.pathname);
+
+  return response;
 }
 
 export const config = {
