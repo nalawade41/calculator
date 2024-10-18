@@ -12,7 +12,7 @@ export const BaseTemplate = (props: {
   return (
     <div className="w-full px-1 text-gray-700 antialiased">
       <div className="mx-auto max-w-screen-md">
-        <header className="border-b border-gray-300">
+        <header>
           <div className="pb-8 pt-16">
             <h1 className="text-3xl font-bold text-gray-900">
               {AppConfig.name}
@@ -37,15 +37,15 @@ export const BaseTemplate = (props: {
 
         <main>{props.children}</main>
 
-        <footer className="border-t border-gray-300 py-8 text-center text-sm">
+        <footer className="py-8 text-center text-sm">
           {`© Copyright ${new Date().getFullYear()} ${AppConfig.name}. `}
           {t.rich('made_with', {
             author: () => (
               <a
-                href="https://creativedesignsguru.com"
+                href="/"
                 className="text-blue-700 hover:border-b-2 hover:border-blue-700"
               >
-                CreativeDesignsGuru
+                Me
               </a>
             ),
           })}
